@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/blue"
     tools:context=".DashBoad">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -21,7 +22,8 @@
             android:id="@+id/etTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Total Number Of Bills" />
+            android:hint="Total Number Of Bills"
+            android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -29,7 +31,7 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="61dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +41,8 @@
             android:id="@+id/etUpcoming"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Upcoming Bills" />
+            android:hint="Upcoming Bills"
+            android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -47,10 +50,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="39dp"
         android:layout_marginEnd="158dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tillUpcoming" />
 
@@ -59,17 +63,18 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="93dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tillTotal">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et Overdue"
+            android:id="@+id/etOverdue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Overdue bills" />
+            android:hint="Overdue  Bills"
+            android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

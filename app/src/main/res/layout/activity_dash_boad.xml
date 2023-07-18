@@ -22,8 +22,10 @@
             android:id="@+id/etTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:hint="Total Number Of Bills"
             android:textSize="24sp" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -42,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Upcoming Bills"
+            android:textColor="@color/white"
             android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -74,7 +77,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Overdue  Bills"
+            android:textColor="@color/white"
             android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/bill"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="17dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,10 +18,37 @@ class Login : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         binding.btnLogin.setOnClickListener {
-            val intent= Intent(this,DashBoad::class.java)
-            startActivity(intent)
+//            val intent= Intent(this,DashBoad::class.java)
+//            startActivity(intent)
+            validateRegistration()
         }
 
     }
+    fun  validateRegistration(){
+
+var UserName=binding.etUser.text.toString()
+        var password=binding.etPass.text.toString()
+        var ConfirmPassword=binding.etConfirm.text.toString()
+        var error=false
+        if (UserName.isBlank()){
+            binding.etUser.error="name required"
+         error=true
+        }
+        if (password.isBlank()){
+            binding.etPass.error="Email required"
+            error=true
+        }
+        if (ConfirmPassword.isBlank()){
+            binding.etConfirm.error="Password require"
+        }
+        if (!error){
+            val intent=Intent(this,DashBoad::class.java)
+            startActivity(intent)
+
+        }
+
+    }
+
+
 
 }

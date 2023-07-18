@@ -9,41 +9,49 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tillUser"
-        android:layout_width="409dp"
-        app:startIconDrawable="@drawable/baseline_person_24"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="119dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="UserName"
+            android:textColor="@color/white"
             android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tillPass"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/baseline_lock_24"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="134dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tillUser">
+        app:layout_constraintTop_toBottomOf="@+id/tillUser"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:textColor="@color/white"
+
             android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,6 +63,8 @@
         android:layout_marginTop="148dp"
         android:layout_marginEnd="161dp"
         android:text="Login"
+        android:textColorHighlight="#932828"
+        android:textColorLink="#231616"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,21 +72,25 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tillConf"
-        app:startIconDrawable="@drawable/baseline_lock_24"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="73dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tillPass">
+        app:layout_constraintTop_toBottomOf="@+id/tillPass"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etConfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="ConfirmPassword"
+            android:textColor="@color/white"
             android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,9 +101,23 @@
         android:layout_marginStart="170dp"
         android:layout_marginTop="38dp"
         android:layout_marginEnd="183dp"
-        android:text="TextView"
+        android:text="Login"
+        android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Login" />
+
+    <ImageView
+        android:id="@+id/ivLogo1"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvVerify"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bill" />
 </androidx.constraintlayout.widget.ConstraintLayout>

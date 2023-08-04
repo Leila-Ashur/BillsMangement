@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/blue"
-    tools:context=".Register">
+    tools:context=" ">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tillName"
+        android:id="@+id/tillFirstName"
 
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -19,22 +19,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:startIconTint="@color/white"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@drawable/baseline_person_24">
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:startIconTint="@color/white">
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
+            android:id="@+id/etFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="FirstName"
             android:textColor="@color/white"
-            android:hint="Username"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tillEmail"
+        android:id="@+id/tillLastName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -44,16 +44,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tillName"
-        app:startIconTint="@color/white"
-        app:startIconDrawable="@drawable/baseline_email_24">
+        app:layout_constraintTop_toBottomOf="@+id/tillFirstName"
+        app:startIconDrawable="@drawable/baseline_email_24"
+        app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="LastName"
             android:textColor="@color/white"
-            android:hint="Email Adrress"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,21 +68,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:startIconTint="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/tillEmail"
-        app:startIconDrawable="@drawable/baseline_lock_24">
+        app:layout_constraintTop_toBottomOf="@+id/tillLastName"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:hint="Password"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tillNumber"
+        android:id="@+id/tillConf"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -92,16 +92,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:startIconTint="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/tillPassword"
-        app:startIconDrawable="@drawable/baseline_numbers_24">
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etNumber"
+            android:id="@+id/etConf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="ConfirmPassword"
             android:textColor="@color/white"
-            android:hint="PhoneNumber"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,15 +109,15 @@
         android:id="@+id/btnProceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="169dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="169dp"
-        android:text="Proceed"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="86dp"
+        android:text="SignUp"
         android:textColorHint="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLog"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tillNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/tillPhone" />
 
     <TextView
         android:id="@+id/tvRegister"
@@ -126,7 +126,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="284dp"
-        android:text="Register"
+        android:text="Register  Now"
         android:textColor="@color/white"
 
         android:textColorHint="@color/white"
@@ -143,13 +143,62 @@
         android:layout_marginStart="133dp"
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/tillName"
+        app:layout_constraintBottom_toTopOf="@+id/tillFirstName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toEndOf="@+id/tvRegister"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bill" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tillPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconTint="@color/white"
+        app:startIconDrawable="@drawable/baseline_local_phone_24"
+
+        app:layout_constraintTop_toBottomOf="@+id/tillConf">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PhoneNumber"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnProceed"
+        app:layout_constraintTop_toBottomOf="@+id/tillPhone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRegister"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

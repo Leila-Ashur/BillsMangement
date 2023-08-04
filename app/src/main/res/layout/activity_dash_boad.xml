@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/blue"
-    tools:context=".DashBoad">
+    tools:context=".ui.DashBoad">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tillTotal"

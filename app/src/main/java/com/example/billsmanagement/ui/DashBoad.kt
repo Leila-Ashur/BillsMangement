@@ -1,7 +1,8 @@
-package com.example.billsmanagement
+package com.example.billsmanagement.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.billsmanagement.R
 
 class DashBoad : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.billsmanagement
+package com.example.billsmanagement.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
         Handler().postDelayed({
-            val intent = Intent(this@MainActivity,Register::class.java)
+            val intent = Intent(this@MainActivity, Register::class.java)
             startActivity(intent)
         },6000)
     }
